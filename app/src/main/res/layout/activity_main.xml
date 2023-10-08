@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,14 +8,51 @@
     android:paddingRight="16dp"
     android:paddingTop="16dp"
     android:paddingBottom="16dp"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
     <!-- Add your UI elements here, such as buttons, text views, etc. -->
+
+
+    <TextView
+        android:id="@+id/sos"
+        android:layout_width="356dp"
+        android:layout_height="99dp"
+        android:text="If you are feeling                ,hit the panic button below"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="94dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="28dp"
+        android:text="unsafe"
+        android:textAlignment="center"
+        android:textColor="#FB0000"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="167dp" />
+
     <Button
         android:id="@+id/sosButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/buttondesign"
         android:text="SOS"
-        android:layout_centerInParent="true" />
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="95dp"
+        tools:layout_editor_absoluteY="245dp" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
