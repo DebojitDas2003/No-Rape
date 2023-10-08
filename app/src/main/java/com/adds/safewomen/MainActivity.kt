@@ -25,11 +25,6 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.adds.safewomen.R
 
-
-
-
- 
-
 @Composable
 fun SOSApp() {
     var isSOSActivated by remember { mutableStateOf(false) }
